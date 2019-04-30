@@ -1,0 +1,90 @@
+        // NOTE: Edge(node slot, vertex, weight)
+
+        // These edges are just for testing.
+//        g.newEdge(0, 1, 5);
+//        g.newEdge(0, 2, 3); 
+//        g.newEdge(1, 3, 6); 
+//        g.newEdge(1, 2, 2); 
+//        g.newEdge(2, 4, 4); 
+//        g.newEdge(2, 5, 2); 
+//        g.newEdge(2, 3, 7); 
+//        g.newEdge(3, 4, -1); 
+//        g.newEdge(4, 5, -2); 
+
+
+    // Algorithm for obtaining the shortest path from source 's' to each job
+//    public void shortestPath(int s){
+//        Stack stack = new Stack();
+//        double dist[] = new double[V];
+//        
+//        // Mark all the vertices as not visited 
+//        Boolean visited[] = new Boolean[V]; 
+//        for (int i = 0; i < V; i++) 
+//            visited[i] = false; 
+//        
+//        // Call topologicalSort() function to store Topological Sort starting from all vertices one by one
+//        for(int i = 0; i < V; i++)
+//            if(visited[i] == false)
+//                topologicalSort(i, visited, stack);
+//        
+//        // Initialize distances to all vertices as infinite and distance to source as 0
+//        for(int i = 0; i < V; i++)
+//            dist[i] = Double.MAX_VALUE;
+//        dist[s] = 0;
+//        
+//        // Process vertices in topological order
+//        while(stack.empty() == false){
+//            // Get next vertex from topological order
+//            int u = (int)stack.pop();
+//            // Update distances of all adjacent vertices
+//            Iterator<Node> it;
+//            if(dist[u] != Integer.MAX_VALUE){
+//                it = adj[u].iterator();
+//                while(it.hasNext()){
+//                    Node i = it.next();
+//                    if(dist[i.getV()] > dist[u] + i.getWeight())
+//                        dist[i.getV()] = dist[u] + i.getWeight();
+//                } 
+//            }
+//        }
+//        
+//        // Print calculated shortest distances
+//        for(int i = 0; i < V; i++){
+//            if(dist[i] == Integer.MAX_VALUE)
+//                System.out.println(i + " : -- ");
+//            else
+//                System.out.println(i + " : " + dist[i]);
+//        }
+//    }
+
+
+//        System.out.println("Shortest distances from source " + s ); 
+//        g.shortestPath(s); 
+//        System.out.println("");
+        
+//        System.out.println("Longest distances from source " + s ); 
+//        System.out.println("");
+        
+//        for(int i = 0; i < lps.size(); i++){
+//            System.out.println(lps.get(i).toString());
+//        }
+
+//        System.out.println("LONGEST PATH:\n" + g.getLongestPath().toString());
+
+        // Create clone(s) of longest paths partition -- for testing the table output
+//        Partition clone = new Partition(partitions.size());
+//        clone.setJobs(partitions.get(0).getJobs());
+//        partitions.add(clone);
+
+
+// Original input:
+0 41.0 1,7,9
+1 51.0 2
+2 50.0
+3 36.0
+4 38.0
+5 45.0
+6 21.0 3,8
+7 32.0 3,8
+8 32.0 2
+9 29.0 4,6
